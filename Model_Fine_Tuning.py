@@ -41,7 +41,7 @@ model = model.to(device)
 # print(tokenizer.decode(model.generate(**tokenizer("hey i was good at basketball but ",
 #                          return_tensors="pt"))[0]))
 
-chatData = knowledge_base("/content/drive/MyDrive/Mental_Health_FAQ.csv", tokenizer)
+chatData = knowledge_base(Mental_Health_FAQ.csv, tokenizer)
 chatData =  DataLoader(chatData, batch_size=64)
 
 model.train()
