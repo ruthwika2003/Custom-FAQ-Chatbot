@@ -1,7 +1,7 @@
 import csv
 import json
 
-file_path = "/content/drive/MyDrive/Mental_Health_FAQ.csv"
+file_path = "Mental_Health_FAQ.csv"
 
 def load_knowledge_base(file_path: str) -> dict:
     data = {}
