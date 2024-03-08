@@ -1,1 +1,8 @@
-*.py
+
+1_data_prep.py
+2_Model_Fine_Tuning.py
+3_Interface.py
+4_Test_and_Evaluation.py
+demo_1.py
+demo_2.py
+demo_chatgpt chat assistant website.py
