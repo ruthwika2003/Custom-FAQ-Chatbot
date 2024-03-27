@@ -9,7 +9,8 @@ headers = {
 
 data = {
     "model": "mistral",
-    "prompt": "Why is mental health important?"
+    "prompt": "Why is mental health important?",
+    "stream": False
 }
 
 response = requests.post(url, headers=headers, data=json.dumps(data))
