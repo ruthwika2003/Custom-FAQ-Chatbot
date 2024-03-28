@@ -31,6 +31,8 @@ def generate_response():
 
 # CUSTOM BOT
 
+from bs4 import BeautifulSoup
+
 urls = [
     'https://www.medicalnewstoday.com/articles/73936'
     'https://www.totalhealthandfitness.com/what-is-mindful-eating-your-complete-guide-to-enjoying-your-food-more/'
