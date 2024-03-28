@@ -28,8 +28,8 @@ def generate_response():
         return None
     
 iface = gr.Interface(
-    fn=generate_response,
-    inputs=gr.inputs.Textbox(lines=2, placeholder="Enter your prompt here..."),
+    fn=generate_response(),
+    inputs=gr.Textbox(lines=2, placeholder="Enter your prompt here..."),
     outputs="text"
 )
 
