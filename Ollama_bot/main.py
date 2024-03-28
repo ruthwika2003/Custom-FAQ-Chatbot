@@ -29,6 +29,16 @@ def generate_response():
         print("Error:", response.status_code, response.text)
         return None
 
+iface = gr.Interface(
+    fn=generate_response,
+    inputs=gr.Textbox(lines=2, placeholder="Enter your prompt here..."),
+    outputs="text"
+)
+
+
+iface.launch()
+
+
 '''
 # CUSTOM BOT
 
@@ -54,12 +64,3 @@ def answer():
     
     return f"Sorry I couldn't find the answer to your questions."
 '''    
-
-iface = gr.Interface(
-    fn=generate_response,
-    inputs=gr.Textbox(lines=2, placeholder="Enter your prompt here..."),
-    outputs="text"
-)
-
-
-iface.launch()
