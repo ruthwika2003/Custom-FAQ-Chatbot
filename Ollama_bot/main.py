@@ -29,6 +29,7 @@ def generate_response():
         print("Error:", response.status_code, response.text)
         return None
 
+'''
 # CUSTOM BOT
 
 from bs4 import BeautifulSoup
@@ -52,7 +53,7 @@ def answer():
             print(f"Error processing URL : {e}")
     
     return f"Sorry I couldn't find the answer to your questions."
-    
+'''    
 
 iface = gr.Interface(
     fn=generate_response,
