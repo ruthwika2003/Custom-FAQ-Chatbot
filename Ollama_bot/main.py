@@ -10,9 +10,9 @@ headers = {
 
 # BASIC BOT
 
-def generate_response():
+def generate_response(prompt):
     data = {
-        "model": "llama2:7b",
+        "model": "mistral",
         "prompt": "Why is mental health important?",
         "stream": False
     }
@@ -24,7 +24,7 @@ def generate_response():
         data = json.loads(response_text)
         actual_response = data["response"]
         return actual_response
-    
+
     else:
         print("Error:", response.status_code, response.text)
         return None
