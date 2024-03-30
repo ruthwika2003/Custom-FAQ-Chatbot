@@ -7,8 +7,10 @@ url = "http://localhost:11434/api/generate"
 headers = {
     'Content-type': 'application/json',
 }
+with open("Ollama_bot\Source.txt", "r", encoding="utf-8") as file:
+    source  = file.read()
 
-conversation_history = []
+conversation_history = [source]
 
 # BASIC BOT
 
